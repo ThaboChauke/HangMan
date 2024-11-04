@@ -6,10 +6,14 @@ public class GameController : MonoBehaviour
 {
     public TMP_Text timeField;
     public TMP_Text wordToFind;
+    public GameObject[] hangMan;
+
+
     private float time;
     private string[] wordsLocal = { "KING", "JOHN", "MATT", "HELEN" };
     private string hiddenWord;
     private string chosenWord;
+    private int fails;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,9 +32,6 @@ public class GameController : MonoBehaviour
                 hiddenWord += "_";
             }
         }
-
-
-
         wordToFind.text = hiddenWord;
     }
 
@@ -67,7 +68,8 @@ public class GameController : MonoBehaviour
             }
             else
             {
-
+                hangMan[fails].SetActive(true);
+                fails++;
             }
         }
     }

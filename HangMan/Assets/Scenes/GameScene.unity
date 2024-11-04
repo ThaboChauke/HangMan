@@ -868,6 +868,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeField: {fileID: 427766775}
   wordToFind: {fileID: 799028923}
+  hangMan:
+  - {fileID: 2080291337}
+  - {fileID: 890399807}
+  - {fileID: 552074105}
+  - {fileID: 1451420943}
+  - {fileID: 1614140150}
+  - {fileID: 707884595}
 --- !u!4 &473011155
 Transform:
   m_ObjectHideFlags: 0
@@ -901,7 +908,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &552074106
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1198,7 +1205,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &707884596
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1710,7 +1717,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &890399808
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2384,7 +2391,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1451420944
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2493,7 +2500,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1614140151
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2602,7 +2609,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &2080291338
 MeshCollider:
   m_ObjectHideFlags: 0
