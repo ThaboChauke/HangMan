@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
     public GameObject[] hangMan;
     public GameObject winText;
     public GameObject loseText;
-
+    public GameObject replayButton;
 
     private float time;
     private string[] words = File.ReadAllLines(@"Assets/words.txt");
@@ -84,11 +84,13 @@ public class GameController : MonoBehaviour
             if (fails == hangMan.Length)
             { 
                 loseText.SetActive(true);
+                replayButton.SetActive(true);
                 gameEnd = true;
             }
             if (!hiddenWord.Contains("_"))
             {
                 winText.SetActive(true);
+                replayButton.SetActive(true);
                 gameEnd = true;
             }
         }
