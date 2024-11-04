@@ -42,8 +42,12 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
-        timeField.text = time.ToString();
+        if (!gameEnd)
+        {
+            time += Time.deltaTime;
+            timeField.text = time.ToString();
+        }
+
     }
 
     private void OnGUI()
