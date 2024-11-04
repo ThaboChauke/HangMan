@@ -875,6 +875,8 @@ MonoBehaviour:
   - {fileID: 1451420943}
   - {fileID: 1614140150}
   - {fileID: 707884595}
+  winText: {fileID: 1193910979}
+  loseText: {fileID: 1389083463}
 --- !u!4 &473011155
 Transform:
   m_ObjectHideFlags: 0

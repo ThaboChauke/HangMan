@@ -1,12 +1,15 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting.Dependencies.Sqlite;
 
 public class GameController : MonoBehaviour
 {
     public TMP_Text timeField;
     public TMP_Text wordToFind;
     public GameObject[] hangMan;
+    public GameObject winText;
+    public GameObject loseText;
 
 
     private float time;
@@ -14,6 +17,7 @@ public class GameController : MonoBehaviour
     private string hiddenWord;
     private string chosenWord;
     private int fails;
+    private bool gameEnd = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -70,6 +74,16 @@ public class GameController : MonoBehaviour
             {
                 hangMan[fails].SetActive(true);
                 fails++;
+            }
+            if (fails == hangMan.Length)
+            { 
+                loseText.SetActive(true);
+                gameEnd = true;
+            }
+            if (!hiddenWord.Contains("_"))
+            {
+                winText.SetActive(true);
+                gameEnd = true;
             }
         }
     }
