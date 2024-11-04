@@ -1,0 +1,128 @@
+# Build Folders
+bin/
+obj/
+
+# VS Code
+.vscode/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider and ReSharper
+.idea/
+*.sln.iml
+
+# ASP.NET Core
+appsettings.json
+appsettings.*.json
+
+# LocalDB
+*.mdf
+*.ldf
+
+# Log files
+*.log
+
+# Npm Packages
+node_modules/
+
+# Environment files
+.env
+.env.*
+
+# NuGet Packages
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Generated files
+*.g.*
+*.g.i.*
+*.generated.cs
+
+# Publish output
+.publish/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Installer files
+*.msi
+*.exe
+*.dll
+*.pdb
+
+# Temporary files
+*.tmp
+*.temp
+~*
+
+# Backup files
+*.bak
+*.swp
+
+# JetBrains Rider
+.idea/
+
+# Azure Functions specific
+local.settings.json
+
+# Unity specific files
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+
+# Asset meta files
+*.pidb.meta
+*.pdb.meta
+*.mdb
+
+# Unity auto-generated files
+*.csproj
+*.unityproj
+*.sln
+*.sln.docstates
+*.pidb
+*.booproj
+*.svd
+
+# Unity Burst compiler
+.burst/
+
+# Unity addressable assets
+*.addressable
+
+# VSCode unity settings
+.vscode/settings.json
+
+# Exclude all crash reports
+CrashReports/
+
+# Exclude Auto-generated JSON data files
+*.json
+
+# Unity Play mode editor prefs
+ProjectSettings/EditorBuildSettings.asset
+ProjectSettings/EditorSettings.asset
+ProjectSettings/GraphicsSettings.asset
+ProjectSettings/InputManager.asset
+ProjectSettings/NavMeshAreas.asset
+ProjectSettings/ProjectSettings.asset
+ProjectSettings/QualitySettings.asset
+ProjectSettings/TagManager.asset
+ProjectSettings/TimeManager.asset
+ProjectSettings/DynamicsManager.asset
+
+# Unity build artifacts
+*.apk
+*.unitypackage
