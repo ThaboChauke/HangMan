@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting.Dependencies.Sqlite;
+using System.Globalization;
+using System.IO;
 
 public class GameController : MonoBehaviour
 {
@@ -13,7 +15,7 @@ public class GameController : MonoBehaviour
 
 
     private float time;
-    private string[] wordsLocal = { "KING", "JOHN", "MATT", "HELEN" };
+    private string[] words = File.ReadAllLines(@"Assets/words.txt");
     private string hiddenWord;
     private string chosenWord;
     private int fails;
@@ -22,7 +24,7 @@ public class GameController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        chosenWord = wordsLocal[Random.Range(0, wordsLocal.Length)];
+        chosenWord = words[Random.Range(0, words.Length)];
 
         for (int i = 0; i < chosenWord.Length; i++)
         {
