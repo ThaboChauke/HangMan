@@ -1,8 +1,5 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
-using Unity.VisualScripting.Dependencies.Sqlite;
-using System.Globalization;
 using System.IO;
 
 public class GameController : MonoBehaviour
@@ -47,7 +44,8 @@ public class GameController : MonoBehaviour
         if (!gameEnd)
         {
             time += Time.deltaTime;
-            timeField.text = time.ToString();
+            timeField.text = time.ToString("F2"); // Displays time rounded to 2 decimal places
+            replayButton.SetActive(false);
         }
 
     }
